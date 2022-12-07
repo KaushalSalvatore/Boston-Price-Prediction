@@ -59,3 +59,4 @@ vercel==0.2.1
 wcwidth==0.2.5
 Werkzeug==2.2.2
 zipp==3.11.0
+pywin32==303
