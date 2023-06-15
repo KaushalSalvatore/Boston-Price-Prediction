@@ -7,6 +7,7 @@ import pandas as pd
 
 app=Flask(__name__)
 scalar=pickle.load(open('scaling.pkl','rb'))
+## load the model 
 regmodel=pickle.load(open('regmodel.pkl','rb'))
 
 @app.route('/')
