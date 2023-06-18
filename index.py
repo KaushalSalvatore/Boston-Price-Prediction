@@ -1,9 +1,9 @@
 import json
 import pickle
-
 from flask import Flask,request,app,jsonify,url_for,render_template
 import numpy as np
 import pandas as pd
+import os
 
 app=Flask(__name__)
 scalar=pickle.load(open('scaling.pkl','rb'))
@@ -33,6 +33,6 @@ def predict():
     output=regmodel.predict(final_input)[0]
     return render_template("index.html",prediction_text="The House price prediction is {}".format(output))
 
-# if __name__=="__main__":
-#     app.run(debug=True,host="0.0.0.0",port=5000)
+if __name__=="__main__":
+    app.run(debug=True, host='0.0.0.0', port=int(os.environ.get("PORT", 8080)))
     
