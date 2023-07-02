@@ -6,10 +6,9 @@ This is machine learning web app that use to predict Boston house price accrodin
 - https://boston-price-prediction.onrender.com/
 
 ## Webview screenshots
-![Alt text](/static/images/Screenshot.png?raw=true "Screen 1") 
+![page_1](https://github.com/KaushalSalvatore/Boston-Price-Prediction/assets/50286592/a86240c5-a381-413d-aeb9-dc2c628c9f9f)
+![page_2](https://github.com/KaushalSalvatore/Boston-Price-Prediction/assets/50286592/4d4be79f-2db7-4d1c-8713-b3ccf7ec2313)
 
-## Project Demo
-![Alt text](/static/images/screenshots/demo.gif?raw=true "Screen demo")
 
 ## ML Project lifeCycle Stp by Step
 
