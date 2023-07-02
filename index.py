@@ -4,6 +4,7 @@ from flask import Flask,request,app,jsonify,url_for,render_template
 import numpy as np
 import pandas as pd
 import os
+import math
 
 app=Flask(__name__)
 scalar=pickle.load(open('scaling.pkl','rb'))
@@ -31,7 +32,13 @@ def predict():
     final_input=scalar.transform(np.array(data).reshape(1,-1))
     print(final_input)
     output=regmodel.predict(final_input)[0]
-    return render_template("index.html",prediction_text="The House price prediction is {}".format(output))
+    output = math.ceil(output*100)/100  
+    return render_template("index.html",prediction_text=output)
+
+
+@app.route('/home')
+def homepage():
+    return render_template('home.html')
 
 if __name__=="__main__":
     # app.run(debug=True)

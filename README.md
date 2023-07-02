@@ -116,13 +116,13 @@ Push code forcefully
   git push origin <your_branch_name> --force
 ```
 ## Create Docker Image
-**Dockerfile:** first create a docker file that is a text document that contains all the commands a user could call on the command line to assemble an image.
-FROM python:3.8.17 (to create a blank base image)
-COPY . /app (allows us to copy a file or folder from the host system into the docker image)
-WORKDIR /app (define the working directory of a Docker container at any given time)
-RUN pip install -r requirements.txt (execute any commands in a new layer on top of the current image and commit the results)
-EXPOSE 8000 (tells Docker that a container listens for traffic on the specified port.)
-CMD python index.py (specifies the instruction that is to be executed when a Docker container starts.)
+- **Dockerfile:** first create a docker file that is a text document that contains all the commands a user could call on the command line to assemble an image.
+- **FROM** python:3.8.17 (to create a blank base image)
+- **COPY** . /app (allows us to copy a file or folder from the host system into the docker image)
+- **WORKDIR** /app (define the working directory of a Docker container at any given time)
+- **RUN** pip install -r requirements.txt (execute any commands in a new layer on top of the current image and commit the results)
+- **EXPOSE** 8000 (tells Docker that a container listens for traffic on the specified port.)
+- **CMD** python index.py (specifies the instruction that is to be executed when a Docker container starts.)
 
 
 ## command for create and Deploy docker image in a Docker hub
@@ -150,14 +150,14 @@ CMD python index.py (specifies the instruction that is to be executed when a Doc
 
 
 ## Important Definition :
--**LinearRegression**
--**coefficients**
--**intercept**
--**Assumptions**
--**mean squared error**
--**Mean absolute error**
--**R square**
--**Adjusted r square**
+- **LinearRegression**
+- **coefficients**
+- **intercept**
+- **Assumptions**
+- **mean squared error**
+- **Mean absolute error**
+- **R square**
+- **Adjusted r square**
 
 
 

@@ -1,116 +1,120 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <!-- Required meta tags-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Colorlib Templates">
-    <meta name="author" content="Colorlib">
-    <meta name="keywords" content="Colorlib Templates">
+  <meta charset="utf-8">
+  <title>Boston Properties Price</title>
+  <link href="static/css/home.css" rel="stylesheet" media="all">
+  <link href="static/css/dialog.css" rel="stylesheet" media="all">
 
-    <!-- Title Page-->
-    <title>Boston Price Prediction</title>
-
-    <!-- Icons font CSS-->
-    <link href="static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
-    <link href="static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <!-- Font special for pages-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
-
-    <!-- Vendor CSS-->
-    <link href="static/vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="static/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
-
-    <!-- Main CSS-->
-    <link href="static/css/main.css" rel="stylesheet" media="all">
 </head>
-
 <body>
-    <div class="page-wrapper bg-blue p-t-100 p-b-100 font-robo">
-        <div class="wrapper wrapper--w680">
-            <div class="card card-1">
-                <div class="card-body">
-                    <h2 class="title">Boston Property Details</h2>
-                    <form name="form1" action="{{url_for('predict')}}" method="POST">
-                        <div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="CRIM" name="CRIM" required></li>
-                        </div>
-                            
-						 
-						<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="ZN" name="ZN" required>
-                        </div>
-
-						<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="INDUS" name="INDUS" required>
-                        </div>
-
-						<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="CHAS" name="CHAS" required>
-                        </div>
-
-						<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="NOX" name="NOX" required>
-                        </div>
-
-						<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="RM" name="RM" required>
-                        </div>
-
-						<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="AGE" name="AGE" required>
-                        </div>
-						
-						<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="DIS" name="DIS" required>
-                        </div>
-
-						<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="RAD" name="RAD" required>
-                        </div>
-
-						<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="TAX" name="TAX" required>
-                        </div>
-
-						<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="PTRATIO" name="PTRATIO" required>
-                        </div>
-
-						<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="B" name="B" required>
-                        </div>
-
-						<div class="input-group">
-                            <input class="input--style-1" type="text" placeholder="LSTAT" name="LSTAT" required>
-                        </div>
-                        
-						<div class="p-t-20">
-                            <button class="btn btn--radius btn--green" type="submit">Submit</button>
-                        </div>
-                    </form>
-                    <br>
-                    <br>
-                    {{prediction_text}}
-                </div>
+  <div class="login-root">
+    <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+      <div class="loginbackground box-background--white padding-top--64">
+        <div class="loginbackground-gridContainer">
+          <div class="box-root flex-flex" style="grid-area: top / start / 8 / end;">
+            <div class="box-root" style="background-image: linear-gradient(white 0%, rgb(247, 250, 252) 33%); flex-grow: 1;">
             </div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 4 / 2 / auto / 5;">
+            <div class="box-root box-divider--light-all-2 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 6 / start / auto / 2;">
+            <div class="box-root box-background--blue800" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 7 / start / auto / 4;">
+            <div class="box-root box-background--blue animationLeftRight" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 8 / 4 / auto / 6;">
+            <div class="box-root box-background--gray100 animationLeftRight tans3s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 2 / 15 / auto / end;">
+            <div class="box-root box-background--cyan200 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 3 / 14 / auto / end;">
+            <div class="box-root box-background--blue animationRightLeft" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 4 / 17 / auto / 20;">
+            <div class="box-root box-background--gray100 animationRightLeft tans4s" style="flex-grow: 1;"></div>
+          </div>
+          <div class="box-root flex-flex" style="grid-area: 5 / 14 / auto / 17;">
+            <div class="box-root box-divider--light-all-2 animationRightLeft tans3s" style="flex-grow: 1;"></div>
+          </div>
         </div>
+      </div>
+      <div class="flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+        <div class="padding-bottom--24 flex-flex flex-justifyContent--center">
+          <h1><b>Boston Property Price Prediction</b></h1>
+        </div>
+        <div class="formbg-outer">
+          <div class="formbg">
+            <div class="formbg-inner padding-top--24 padding-right--24 padding-left--24">
+              <form id="stripe-login" action="{{url_for('predict')}}" method="POST">
+                <div class="field padding-bottom--24">
+                  <input type="text" placeholder="CRIM(per capita crime rate by town)" name="CRIM" required>
+                </div>
+                <div class="field padding-bottom--24">
+                  <input type="text" placeholder="ZN(proportion of residential land zoned for lots over 25,000 sq.ft.)" name="ZN" required>
+                </div>
+                <div class="field padding-bottom--24">
+                  <input type="text" placeholder="INDUS(proportion of non-retail business acres per town)" name="INDUS" required>
+                </div>
+                <div class="field padding-bottom--24">
+                  <input type="text" placeholder="CHAS(Charles River dummy variable)" name="CHAS" required>
+                </div>
+                <div class="field padding-bottom--24">
+                  <input type="text" placeholder="NOX(nitric oxides concentration)" name="NOX" required>
+                </div>
+                <div class="field padding-bottom--24">
+                  <input type="text" placeholder="RM(average number of rooms per dwelling)" name="RM" required>
+                </div>
+                <div class="field padding-bottom--24">
+                  <input type="text" placeholder="AGE(proportion of owner-occupied units built prior to 1940)" name="AGE" required>
+                </div>
+                <div class="field padding-bottom--24">
+                  <input type="text" placeholder="DIS(weighted distances to five Boston employment centres)" name="DIS" required>
+                </div>
+                <div class="field padding-bottom--24">
+                  <input type="text" placeholder="RAD(index of accessibility to radial highways)" name="RAD" required>
+                </div>
+                <div class="field padding-bottom--24">
+                  <input type="text" placeholder="TAX(full-value property-tax rate per $10,000)" name="TAX" required>
+                </div>
+                <div class="field padding-bottom--24">
+                  <input type="text" placeholder="PTRATIO(pupil-teacher ratio by town)" name="PTRATIO" required>
+                </div>
+                <div class="field padding-bottom--24">
+                  <input type="text" placeholder="B(proportion of black people by town)" name="B" required>
+                </div>
+                <div class="field padding-bottom--24">
+                  <input type="text" placeholder="LSTAT(lower status of the population)" name="LSTAT" required>
+                </div>
+                <div class="field padding-bottom--24">
+                <button class="btn btn--radius btn--green" type="submit">Submit</button>
+                <!-- <button  name="submit" type="submit">Submit</button> -->
+                <!-- <input type="submit" name="submit"> -->
+                </div>
+              </form>
+            </div>
+            {% if prediction_text %}
+            <div id="centerpoint">
+                <div id="dialog"></div>
+                <div class="popup">
+                    <button id="close">&times;</button>
+                    <h3>Boston House price prediction</h3>
+                    <br>
+                    <b>{{prediction_text}}</b>
+                    <br>
+                    <br>
+                    <a href="/">Back to Home</a>
+                </div>
         
+            </div>
+          {% endif %}
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Jquery JS-->
-    <script src="static/vendor/jquery/jquery.min.js"></script>
-    <!-- Vendor JS-->
-    <script src="static/vendor/select2/select2.min.js"></script>
-    <script src="static/vendor/datepicker/moment.min.js"></script>
-    <script src="static/vendor/datepicker/daterangepicker.js"></script>
-
-    <!-- Main JS-->
-    <script src="static/js/global.js"></script>
-    <script src="static/js/non-empty.js"></script>
-
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
-
+  </div>
+  <script src="static/js/dialog.js"></script>
+</body>
 </html>
-<!-- end document-->
